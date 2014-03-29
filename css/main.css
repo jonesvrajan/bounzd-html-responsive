@@ -1,0 +1,1169 @@
+/* ==========================================================================
+   Author : Jones V Rajan (jonesvrajan@gmail.com).
+   For    : Bounzd;
+   Type   : Responsive;
+   Date   : 7-3-2013;
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    color: #000;
+    padding: 0.2em 0;
+	position: absolute;
+	width: 500px;
+	height: 200px;
+	background: #FFF;
+	border: 10px solid #CCC;
+	top: 40%;
+	left: 50%;
+	z-index: 10;
+	margin: -100px 0 0 -250px;
+	font-size: 1em;
+	line-height: 2em;
+}
+
+.chromeframe span {
+	padding: 50px 20px;
+	display: block;
+}
+
+.chromeframe-overlay {
+	width: 100%;
+	height: 100%;
+	background: #111111;
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+::-moz-selection { 
+	background: #17acbf; 
+	color: #fff; 
+	text-shadow: none; 
+}
+::selection { 
+	background: #17acbf; 
+	color: #fff; 
+	text-shadow: none; 
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'nevisBold';
+    src: url('font/font/nevis_1-webfont.eot');
+    src: url('font/nevis_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/nevis_1-webfont.woff') format('woff'),
+         url('font/nevis_1-webfont.ttf') format('truetype'),
+         url('font/nevis_1-webfont.svg#nevisBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideLight';
+    src: url('font/novecentowide-light-webfont.eot');
+    src: url('font/novecentowide-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/novecentowide-light-webfont.woff') format('woff'),
+         url('font/novecentowide-light-webfont.ttf') format('truetype'),
+         url('font/novecentowide-light-webfont.svg#NovecentowideLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideNormal';
+    src: url('font/novecentowide-normal-webfont.eot');
+    src: url('font/novecentowide-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/novecentowide-normal-webfont.woff') format('woff'),
+         url('font/novecentowide-normal-webfont.ttf') format('truetype'),
+         url('font/novecentowide-normal-webfont.svg#NovecentowideNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideDemiBold';
+    src: url('font/novecentowide-demibold-webfont.eot');
+    src: url('font/novecentowide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/novecentowide-demibold-webfont.woff') format('woff'),
+         url('font/novecentowide-demibold-webfont.ttf') format('truetype'),
+         url('font/novecentowide-demibold-webfont.svg#NovecentowideDemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideBook';
+    src: url('font/novecentowide-book-webfont.eot');
+    src: url('font/novecentowide-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/novecentowide-book-webfont.woff') format('woff'),
+         url('font/novecentowide-book-webfont.ttf') format('truetype'),
+         url('font/novecentowide-book-webfont.svg#NovecentowideBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideBold';
+    src: url('font/novecentowide-bold-webfont.eot');
+    src: url('font/novecentowide-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/novecentowide-bold-webfont.woff') format('woff'),
+         url('font/novecentowide-bold-webfont.ttf') format('truetype'),
+         url('font/novecentowide-bold-webfont.svg#NovecentowideBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('font/OpenSans-Light-webfont.eot');
+    src: url('font/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Light-webfont.woff') format('woff'),
+         url('font/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansLightItalic';
+    src: url('font/OpenSans-LightItalic-webfont.eot');
+    src: url('font/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-LightItalic-webfont.woff') format('woff'),
+         url('font/OpenSans-LightItalic-webfont.ttf') format('truetype'),
+         url('font/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('font/OpenSans-Regular-webfont.eot');
+    src: url('font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Regular-webfont.woff') format('woff'),
+         url('font/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('font/OpenSans-Italic-webfont.eot');
+    src: url('font/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Italic-webfont.woff') format('woff'),
+         url('font/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('font/OpenSans-Semibold-webfont.eot');
+    src: url('font/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('font/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemiboldItalic';
+    src: url('font/OpenSans-SemiboldItalic-webfont.eot');
+    src: url('font/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
+         url('font/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
+         url('font/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('font/OpenSans-Bold-webfont.eot');
+    src: url('font/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Bold-webfont.woff') format('woff'),
+         url('font/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBoldItalic';
+    src: url('font/OpenSans-BoldItalic-webfont.eot');
+    src: url('font/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('font/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('font/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url('font/OpenSans-ExtraBold-webfont.eot');
+    src: url('font/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('font/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('font/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansExtraboldItalic';
+    src: url('font/OpenSans-ExtraBoldItalic-webfont.eot');
+    src: url('font/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'),
+         url('font/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'),
+         url('font/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+    font-size: 62.5%
+}
+
+body {
+	background: none repeat scroll 0 0 #E9C324;
+	border-top: 5px solid #000000;
+	color: #222222;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5em;
+}
+
+.main-wrap {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 72px;
+    height: 28px;
+    margin: 10px auto 20px;
+    padding: 38px 0 0;
+}
+
+.logo a {
+    display: block
+}
+
+.logo em {
+    display: none;
+}
+
+.main-header {
+  border-bottom: 1px solid #DEBA24;
+  width: 100%;
+}
+
+.main-nav ul {
+    text-align: center;
+    font-size: 0.875em
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	z-index: 9999;
+}
+
+.reset-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav ul {
+    display: none;
+    border-bottom: 5px solid #000;
+	background: #D5B221;
+}
+
+.main-nav a, .register ul li a  {
+    font: normal 0.875em/1em 'NovecentowideDemiBold';
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.show-menu {
+    background: #111;
+    text-align: center;
+    color: #FFF;
+    display: block;
+}
+
+.main-nav ul li a {
+    display: block;
+    border-top: 1px solid #b79818;
+    color: #000;
+}
+
+.main-nav ul li a:hover {
+    background: #B79818;
+}
+
+.register {
+    margin: 0 auto;
+    background: #D5B221;
+    border-bottom: 1px solid #E1BD24;
+    border-top: 1px solid #F4CD29;
+}
+
+.register ul li {
+    float: left;
+    margin: 0 20px;
+}
+
+.register ul li.last {
+    float: right;
+}
+
+.register ul li a {
+    display: block;
+    color: #ffe576;
+}
+
+.banner-area {
+    background: url("../img/bg-featured-shadow.png") no-repeat scroll center top transparent;
+    border-bottom: 1px solid #E1BD24;
+    border-top: 1px solid #F4CD29;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.banner-text h2 {
+    font: normal 2em/35px 'NovecentowideBold';
+    letter-spacing: -2px;
+    margin: 0 0 8px;
+}
+
+.banner-area .banner-media {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.banner-area .banner-media img {
+    width: 100%;
+}
+
+.banner-text h3 {
+    font: normal 1em/16px 'OpenSansBold';
+    margin: 0 0 8px;
+    line-height: 16px;
+    text-shadow: 1px 1px 1px #f6cc1b;
+}
+
+.banner-text h4 {
+    font: normal 0.875em/20px 'OpenSansLight';
+    text-shadow: 1px 1px 1px #f6cc1b;
+    margin: 0;
+}
+
+.sign-up {
+    width: 100%;
+    border-top: 1px solid #f2cb28;
+    clear: both;
+    background: url(../img/bg-cta-shadow.png) no-repeat center top;
+    float: left;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.sign-up h3 {
+    font: normal 1em/18px NovecentowideBold;
+    text-shadow: 1px 1px 1px #f6cc1b;
+    margin: 0;
+}
+
+.sign-up h2 {
+    font: normal 2em/35px NovecentowideBold;
+    margin: 0 0 10px;
+    text-shadow: 1px 1px 1px #f6cc1b;
+}
+
+span.center {
+    display: block;
+    text-align: center;
+}
+
+.button {
+    background: url(../img/sprite-global.png) no-repeat left top;
+    padding: 0 0 0 32px;
+    display: inline-block;
+    margin-bottom: 1px;
+}
+
+.button span {
+    background: url(../img/sprite-global.png) no-repeat right -60px;
+    padding: 11px 35px 16px 0;
+    font-size: 18px;
+    line-height: 18px;
+    text-shadow: 1px 1px 1px #0d4d72;
+    cursor: pointer;
+    font-family: NovecentowideBold;
+    margin: 0 0 0 -2px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.button:hover {
+    background:url(../img/sprite-global.png) no-repeat left -115px;
+}
+.button:hover span {
+    background:url(../img/sprite-global.png) no-repeat right -175px;
+    color: #fff;
+}
+.button:active {
+    margin:1px 0 0 0;
+}
+
+.testimonials-wrap {
+    background: #000;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.testimonials li .flexslider .slides span img {
+	width: 100%;
+    margin-bottom: 15px;
+}
+
+.testimonials li {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.testimonials li h3 {
+    color: #e9c324;
+    margin: 0 0 10px;
+    font: normal 1em/20px NovecentowideDemiBold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.testimonials li p {
+    margin: 0;
+    font: normal 0.75em/16px 'OpenSansBold';
+    color: #c7bb8b; 
+}
+
+.bg-white {
+    background: #FFF;
+    margin: 20px 0;
+}
+
+.tab-head li a {
+    display: block;
+    font-family: NovecentowideBold;
+    font-size: 0.8125em;
+    padding: 10px;
+    border-right: 1px solid #f6f6f6;
+    border-top: 2px solid #FFF;
+    text-align: center;
+    border-bottom: 5px solid #eee;
+}
+
+.tab-head li:hover a, .tab-head li.current  a {
+    border-bottom: 5px solid #000;
+    border-top: 2px solid #999;
+}
+
+#tab-content {
+    padding: 0 7.446808510638298% 100px;
+    background: #f3f3f3;
+}
+
+.tab-content {
+    width: 100%;
+}
+
+.customers {
+	width: 2000px;
+}
+
+.customers li {
+	float: left;
+    height: 240px;
+}
+
+.tab-featured {
+    width: auto !important;
+}
+
+.tab-content h4 {
+    margin: 0;
+    font: normal 1.4em/26px 'OpenSansLight';
+    text-align: center;
+    padding: 40px 0;
+}
+
+.text p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.screenshots .slides li ul li {
+    background: #fffff7 url(../img/bg-screenshots-shadow.jpg) repeat-x bottom left;
+    margin: 0;
+    width: 100%;
+    padding: 35px 0 0;
+}
+
+.screenshots .left, .screenshots .right {
+	float: none;
+}
+
+.screen {
+	display: none;
+}
+
+.device {
+	display: block;
+}
+
+.screenshots .text-wrap {
+		padding: 10px 20px;
+}
+
+.screenshots .scr-text h2 {
+    font: normal 18px/20px NovecentowideBold;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.screenshots .scr-text p {
+    margin: 0 0 15px;
+    font: 13px/18px OpenSansRegular;
+}
+
+.screenshots .scr-img {
+    width: 70%;
+    margin: 0 auto 20px;
+}
+
+.screenshots .scr-img img {
+    width: 100%;
+}
+
+.screenshots .scr-text {
+    text-align: center !important;
+}
+
+.footer-main {
+    background: none repeat scroll 0 0 #0B0B0B;
+    color: #FFF;
+}
+
+.footer-main h2 {
+    color: #FFFFFF;
+    font: 14px/20px NovecentowideBold;
+}
+
+.footer-main .footer-section {
+    width: 80%;
+    margin: 0 auto 20px;
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.footer-main strong {
+    font: normal 11px/15px OpenSansRegular;
+    color: #797979;
+    display: block;
+    margin-bottom: 5px;
+}
+
+ .footer-main p {
+    font: normal 13px/15px OpenSansRegular;
+    color: #d6d6ce;
+    display: block;
+}
+
+.email {
+  background: none repeat scroll 0 0 #272727;
+  border: 0 none;
+  color: #525251;
+  display: block;
+  height: 2.4em;
+  margin: 0 0 5px;
+  outline: medium none;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.footer-section p {
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.footer-main .icon-nav li a {
+    width: 37px;
+    height: 38px;
+    margin: 0 3px 0 0;
+}
+
+.footer-main .icon-nav li {
+    display: inline;
+}
+
+.icon-nav li a {
+    display:inline-block;
+    height:38px;
+    background:url(../img/sprite-social.png) no-repeat left 0;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+}
+.icon-nav .facebook a {
+    background-position:-38px 0;
+}
+.icon-nav .facebook a:hover {
+    background-position:-38px -39px;
+}
+.icon-nav .twitter a {
+    background-position:-76px 0;
+}
+.icon-nav .twitter a:hover {
+    background-position:-76px -39px;
+}
+.icon-nav .rss a {
+    background-position:-114px 0;
+}
+.icon-nav .rss a:hover {
+    background-position:-114px -39px;
+}
+.icon-nav .in a {
+    background-position:0 0;
+}
+.icon-nav .in a:hover {
+    background-position:0 -39px;
+}
+
+.footer-main .hate-spam {
+    font: normal 11px/18px OpenSansRegular;
+    color: #727272;
+}
+
+.footer-main .thanks h3 {
+    font: normal 14px/18px OpenSansBold;
+    color: #999;
+    margin: 17px 0 10px;
+}
+.footer-main .thanks p {
+    font: normal 12px/16px OpenSansLight;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.footer-main .thanks span {
+    display: block;
+}
+
+.footer-main .thanks {
+    text-align: center !important;
+}
+
+.foot-outer {
+    background: #050505;
+    width: 100%;
+    padding: 25px 0 !important;
+}
+
+.footer-outer {
+    padding: 20px 0 !important;
+}
+
+.foot-nav li a {
+    font: normal 13px/18px NovecentowideBook;
+    color: #707070;
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px solid #202020;
+}
+
+.foot-nav li a:hover {
+    background: #202020   
+}
+
+.foot-logo {
+    background: url(../img/logo-footer.png) no-repeat;
+    height: 23px;
+    text-indent: -999em;
+    width: 64px;
+    display: block;
+    margin: 20px auto;
+}
+
+.footer-menu {
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .logo {
+        margin: 0 50px 0 0;
+        padding: 0;
+        float: left;
+    } 
+
+    .main-nav {
+        position: relative;
+        float: left;
+        width: auto;
+    }
+
+    .main-nav ul {
+        display: block;
+        border-bottom: 0;
+		background: none;
+    }
+
+    .main-nav ul li {
+        float: left;
+        margin: 0 20px 0 0;
+    }
+
+    .main-nav ul li a {
+        border: 0;
+        border-top: 1px solid #E9C324;
+        background: none;
+    }
+
+    .main-nav ul li a:hover, .main-nav ul li.current a {
+        border-top: 1px solid #000;
+        background: none;
+    }
+
+    .show-menu {
+        display: none;
+    }
+
+    .main-header {
+        padding: 25px 0;
+    }
+
+    .register {
+        float: right;
+        margin: 0;
+        background: none;
+        border-bottom: 0;
+        border-top: 0;
+    }
+
+    .register ul li.last {
+        float: left;
+        margin-left: 20px;
+    } 
+
+    .banner-area {
+        text-align: left;
+    }
+
+    .banner-area .banner-text {
+        width: 72.87234042553191%;
+        float: left;
+    }
+
+    .banner-area .banner-media {
+        width: 27.12765957446809%;
+        float: left;
+    }
+
+    .banner-area .banner-media img {
+        width: 100%;
+    }
+
+    .banner-text h2 {
+        font-size: 2.8em;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .banner-area {
+        padding: 57px 0;
+    }
+    
+    .sign-up h3 {
+        font: normal 24px/20px NovecentowideBold;
+        margin: 0 0 20px;
+    }
+
+    .sign-up h2 {
+        font: normal 40px/35px NovecentowideBold;
+        margin: 0 0 20px;
+    }
+
+    .testimonials li {
+        width: 25%;
+        float: left;
+        margin: 0 4%; 
+    }
+
+    .register ul li a {
+        color: #000;
+    }
+
+    .bg-white {
+        background: #FFF;
+        margin: 80px auto !important;
+    }
+
+    .tab-head li {
+        float: left;
+    }
+    
+    .tab-head li a {
+        text-align: left;
+        border-bottom: 0;
+        border-top: 5px solid #FFF;
+    }
+
+    .tab-head li:hover a, .tab-head li.current a{
+        border-top: 5px solid #000;
+        border-bottom: 0;
+    }
+    
+	.screenshots .scr-img {
+		width: 41.48936170212766%;
+	}
+	
+	.screenshots .scr-img img {
+		width: 100%;
+	}
+	
+	.screenshots .scr-text {
+		width: 58%;
+        text-align: left !important;
+	}
+	.screen {
+		display: block;
+	}
+	
+	.device {
+		display: none;
+	}
+	
+	.screenshots .left {
+		float: left;
+	}
+	
+	.screenshots .right {
+		float: right;
+	}
+	
+	.screenshots .text-wrap {
+		padding: 30px;
+	}
+
+    .screenshots .align-right {
+        text-align: right !important;
+    }
+
+    .footer-main .footer-section {
+        width: 33.33333333333333%;
+        margin: 0;
+        text-align: left;
+        float: left;
+    }
+
+    .email {
+        width: 80%;
+    }
+
+    .foot-nav li {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .footer-outer {
+        padding: 30px 0 !important;
+    }
+
+    .footer-menu {
+        float: left;
+        text-align: left;
+    }
+
+    .footer-logo-wrap {
+        float: right;
+    }
+
+    .foot-logo {
+        margin: 0;
+    }
+
+    .foot-nav li a {
+        padding: 5px;
+        border-bottom: 0;
+    }
+    .foot-nav li a:hover {
+        border-bottom: 1px solid #707070;
+        background: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .main-wrap {
+    	max-width: 940px;
+    	margin: 0 auto;
+        padding: 0;
+    }
+
+    .banner-text h2 {
+        font-size: 4.0625em;
+        line-height: 60px;
+    }
+
+    .tab-featured {
+        width: 780px !important;
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clear {
+    clear: both;;
+    height: 0;
+    line-height: 0;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
